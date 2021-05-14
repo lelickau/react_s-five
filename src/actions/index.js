@@ -16,4 +16,17 @@ const menuError = () => {
         type: 'MENU_ERROR',
     }
 }
-export {menuLoaded, menuRequested, menuError};
+const addToCart = (id) => {
+    return {
+        type: 'ADD_TO_CART',
+        payload: id
+    }
+}
+
+const deleteFromCart = (id) => {
+    return {
+        type: 'DELETE_FROM_CART',
+        payload: id
+    }
+}
+export {menuLoaded, menuRequested, menuError, addToCart, deleteFromCart};
